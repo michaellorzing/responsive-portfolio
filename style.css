@@ -226,19 +226,67 @@ input[type=submit] {
     margin-right: 15px;
   }
 
+  h1  {
+    padding: 0;
+    margin: 0;
+  }
+
   .auth-image {
     height: 300px;
     width: 350px;
   }
 
   .main-section {
-    margin-top: 45px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    width: 725px;
+    position: static;
+    display: block;
+    font-size: small;
   }
 
-  .main-container {
-    max-height: 300px;
-    max-width: 300px;
-    margin-right: 35px;
-    margin-left: 35px;
-  }
+  /*There's a ton of free space at the bottom of the container in the example. Margins don't seem to help. I changed the font size to help in that regard. Not sure if that's the best way of going about it.*/
+
 }
+
+@media only screen and (max-width: 640px)  {
+
+  nav {
+    margin: 15;
+    float: left;
+    padding-left: 155px;
+    padding-bottom: 15px;
+  }
+
+
+  h1  {
+    margin: 10px;
+  }
+
+  .work   {
+    margin-left: 105px;
+  }
+
+  .main-section{
+    max-width: 560px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .auth-image {
+    width: 100%;
+    margin-bottom: 10px;
+    clear: both;
+  }
+
+  #logo {
+    width: 600px;
+  }
+
+}
+
+
+ 
+
+
+
